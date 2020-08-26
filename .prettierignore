@@ -1,0 +1,4 @@
+# Ignore artifacts:
+__sapper__
+cypress
+node_modules
