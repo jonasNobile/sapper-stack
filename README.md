@@ -9,7 +9,7 @@ The [Sapper](https://github.com/sveltejs/sapper) template, with SCSS support for
 [`degit`](https://github.com/Rich-Harris/degit) is a scaffolding tool that lets you create a directory from a branch in a repository:
 
 ```bash
-npx degit "jonasNobile/sapper-stack" my-app
+npx degit "jonasNobile/sapper-template" my-app
 ```
 
 ### Running the project
@@ -87,4 +87,4 @@ npm install -D @sveltejs/svelte-virtual-list
 
 ## Bugs and feedback
 
-Sapper is in early development, and may have the odd rough edge here and there. Please be vocal over on the [Sapper issue tracker](https://github.com/jonasNobile/sapper-stack/issues).
+Sapper is in early development, and may have the odd rough edge here and there. Please be vocal over on the [Sapper issue tracker](https://github.com/jonasNobile/sapper-template/issues).
