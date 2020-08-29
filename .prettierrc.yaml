@@ -2,7 +2,7 @@ trailingComma: 'es5'
 tabWidth: 4
 semi: false
 singleQuote: true
-svelteSortOrder: 'scripts-markup-styles'
+svelteSortOrder: 'scripts-styles-markup'
 svelteStrictMode: true
 svelteBracketNewLine: true
 svelteAllowShorthand: false
