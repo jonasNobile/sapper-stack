@@ -1,0 +1,23 @@
+//odstrani iOS rounded
+input, input[type="submit"], select, input[type="email"], input[type="date"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], textarea {
+	-webkit-appearance:none;
+	border-radius:0;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: checkbox;
+}
+input[type="radio"] {
+	-webkit-appearance: radio;
+}
+
+//vypina krizek u search
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { 
+	display: none; 
+}
+input::-ms-clear {
+  display: none;
+}

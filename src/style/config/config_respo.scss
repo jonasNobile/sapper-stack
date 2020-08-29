@@ -1,0 +1,16 @@
+//breakpoints
+$b-980: max-width 980px;
+$b-767: max-width 767px;
+$b-479: max-width 479px;
+$b-319: max-width 319px;
+
+/////////////////////////////////////////
+// Setting up Breakpoint Slicer
+/////////////////////////////////////////
+// prettier-ignore
+$slicer-breakpoints:        0        400px       600px      800px        1050px        1400px;
+
+//                            └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘ └────┬────┘ └────┬────
+//   Slice numbers:                1           2           3           4           5           6
+// prettier-ignore
+$slicer-breakpoint-names:        'xs'         's'         'm'         'l'        'xl'        'xxl';

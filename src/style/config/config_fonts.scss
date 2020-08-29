@@ -1,0 +1,12 @@
+//FONTS
+$headlines:Georgia, serif;
+$common:Arial, sans-serif;
+
+$bfs:16px;
+$bvw:1920px;
+
+// @include f-type($min_width, $max_width, $min_font, $max_font);
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: $bfs;
+$max_font: 24px;

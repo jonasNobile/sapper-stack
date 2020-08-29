@@ -3,7 +3,6 @@
 </script>
 
 <style lang="scss" global>
-    @import 'reset-css/sass/reset';
     @import '../style/global.scss';
 </style>
 

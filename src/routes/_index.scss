@@ -3,6 +3,10 @@ figure,
 p {
     text-align: center;
     margin: 0 auto;
+
+    @include to(m) {
+        display: none;
+    }
 }
 
 h1 {

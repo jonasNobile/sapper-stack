@@ -12,6 +12,8 @@
         "test": "run-p --race dev cy:run"
     },
     "dependencies": {
+        "breakpoint-sass": "^2.7.1",
+        "breakpoint-slicer": "^2.0.0",
         "compression": "^1.7.4",
         "polka": "next",
         "reset-css": "^5.0.1",

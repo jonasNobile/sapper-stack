@@ -1,0 +1,15 @@
+//DEFAULT EFFECTS
+@import 'transitions'; //default effects with time variables
+//CUSTOM FONTS
+@import 'fonts';
+//CUSTOM MIXINS
+@import 'mixins'; //default custom mixins
+//CUSTOM FORMS
+@import 'forms';
+
+@import 'typography';
+//WORDPRESS
+@import 'wordpress-core';
+
+//CUSTOM SLICK
+//@import '~tiny-slider/src/tiny-slider.scss';

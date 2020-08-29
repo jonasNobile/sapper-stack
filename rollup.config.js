@@ -10,7 +10,17 @@ import pkg from './package.json'
 import alias from '@rollup/plugin-alias'
 import sveltePreprocess from 'svelte-preprocess'
 
-const preprocess = sveltePreprocess()
+const preprocess = sveltePreprocess({
+    scss: {
+        prependData: `
+                    @import 'reset-css/sass/reset';
+                    @import 'breakpoint-sass/stylesheets/breakpoint';
+                    @import 'breakpoint-slicer/stylesheets/breakpoint-slicer';
+                    @import 'src/style/imports/imports_loader';
+                    @import 'src/style/config/config';
+                    `,
+    },
+})
 
 const aliases = alias({
     resolve: ['.svelte', '.js', '.scss'],
@@ -33,6 +43,7 @@ const onwarn = (warning, onwarn) =>
     (warning.code === 'MISSING_EXPORT' && /'preload'/.test(warning.message)) ||
     (warning.code === 'CIRCULAR_DEPENDENCY' &&
         /[/\\]@sapper[/\\]/.test(warning.message)) ||
+    warning.code !== 'css-unused-selector' ||
     onwarn(warning)
 
 export default {

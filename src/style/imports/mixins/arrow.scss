@@ -1,0 +1,75 @@
+@mixin arrow($direction, $color, $width, $height: false, $position: false) {
+    display: block;
+    height: 0;
+    width: 0;
+    border-style: solid;
+
+    @if $height == false {
+    	$height:$width;
+    }
+
+    @if $position == true {
+        content: "";
+        position: absolute;
+
+        @if $direction == "top" {
+            bottom: 100%;
+            left: 50%;
+            margin-left: (-$size);
+        } @else if $direction == "bottom" {
+            top: 100%;
+            left: 50%;
+            margin-left: (-$size);
+        } @else if $direction == "left" {
+            right: 100%;
+            top: 50%;
+            margin-top: (-$size);
+        } @else if $direction == "right" {
+            left: 100%;
+            top: 50%;
+            margin-top: (-$size);
+        }
+    }
+
+    @if $direction == "top" {
+
+    	border-width: 0 ($width/2) $height ($width/2);
+		border-color: transparent transparent $color transparent;
+
+    } @else if $direction == "right" {
+
+    	border-width: ($height/2) 0 ($height/2) $width;
+		border-color: transparent transparent transparent $color;
+
+    } @else if $direction == "bottom" {
+
+    	border-width: $height ($width/2) 0 ($width/2);
+		border-color: $color transparent transparent transparent;
+
+    } @else if $direction == "left" {
+
+    	border-width: ($height/2) $width ($height/2) 0;
+		border-color: transparent $color transparent transparent;
+
+    } @else if $direction == "top-left" {
+
+    	border-width: $width $width 0 0;
+		border-color: $color transparent transparent transparent;
+
+    } @else if $direction == "top-right" {
+
+    	border-width: 0 $width $width 0;
+		border-color: transparent $color transparent transparent;
+
+    } @else if $direction == "bottom-left" {
+
+    	border-width: $width 0 0 $width;
+		border-color: transparent transparent transparent $color;
+
+    } @else if $direction == "bottom-right" {
+
+    	border-width: 0 0 $width $width;
+		border-color: transparent transparent $color transparent;
+		
+    }
+}

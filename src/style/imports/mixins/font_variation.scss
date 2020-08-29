@@ -1,0 +1,7 @@
+@mixin font_variation($variation...) {
+  font-weight: 400; // wght
+  font-stretch: normal; // wdth
+  font-style: normal; // slnt and ital
+  font-optical-sizing: auto; // opsz
+  font-variation-settings: $variation;
+}

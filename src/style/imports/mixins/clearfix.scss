@@ -1,0 +1,11 @@
+//end
+@mixin c {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.cl {
+  @include c;
+}

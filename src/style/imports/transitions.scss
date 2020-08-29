@@ -1,0 +1,15 @@
+$duration:250ms;
+
+a, input {
+  -webkit-transition: all $duration ease-out;
+  -moz-transition: all $duration ease-out;
+  -o-transition: all $duration ease-out;
+  transition: all $duration ease-out;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
