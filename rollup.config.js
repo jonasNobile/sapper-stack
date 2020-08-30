@@ -4,12 +4,13 @@ import commonjs from '@rollup/plugin-commonjs'
 import svelte from 'rollup-plugin-svelte'
 import babel from '@rollup/plugin-babel'
 import { terser } from 'rollup-plugin-terser'
-import config from 'sapper/config/rollup.js'
+import config from 'sapper/config/rollup'
 import pkg from './package.json'
 
 import alias from '@rollup/plugin-alias'
 import sveltePreprocess from 'svelte-preprocess'
 
+const autoprefixer = require('autoprefixer')
 const preprocess = sveltePreprocess({
     scss: {
         prependData: `
@@ -19,6 +20,9 @@ const preprocess = sveltePreprocess({
                     @import 'src/style/imports/imports_loader';
                     @import 'src/style/config/config';
                     `,
+    },
+    postcss: {
+        plugins: [autoprefixer],
     },
 })
 
