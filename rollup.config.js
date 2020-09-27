@@ -31,7 +31,7 @@ const aliases = alias({
     entries: [
         { find: 'scripts', replacement: 'src/scripts' },
         { find: 'style', replacement: 'src/style' },
-        { find: 'components', replacement: 'src/components' },
+        { find: 'components', replacement: 'src/_components' },
     ],
 })
 
